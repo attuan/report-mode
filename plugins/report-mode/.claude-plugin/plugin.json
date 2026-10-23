@@ -1,0 +1,10 @@
+{
+  "name": "report-mode",
+  "version": "0.1.0",
+  "description": "Record prompts, answers, AI edits and your own fixes for disclosing generative-AI use in academic reports (LaTeX/Markdown export).",
+  "author": {
+    "name": "attuan"
+  },
+  "license": "MIT",
+  "keywords": ["report", "latex", "academic", "disclosure", "generative-ai", "hooks"]
+}

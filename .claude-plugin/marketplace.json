@@ -1,0 +1,19 @@
+{
+  "name": "claude-report-mode",
+  "owner": {
+    "name": "attuan"
+  },
+  "metadata": {
+    "description": "Claude Code での生成AI利用（プロンプト・回答・AIの書き込み・利用者の修正）を自動記録し、レポートの付録として出力するプラグイン"
+  },
+  "plugins": [
+    {
+      "name": "report-mode",
+      "source": "./plugins/report-mode",
+      "description": "Record prompts, answers, AI edits and your own fixes for disclosing generative-AI use in academic reports (LaTeX/Markdown export).",
+      "version": "0.1.0",
+      "license": "MIT",
+      "keywords": ["report", "latex", "academic", "disclosure", "generative-ai", "hooks"]
+    }
+  ]
+}
