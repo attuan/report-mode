@@ -1,4 +1,4 @@
-# claude-report-mode
+# report-mode
 
 Claude Code で大学のレポートなどを書くときに、**生成AIの利用内容を自動で記録し、レポートの付録として出力する**プラグインです。
 
@@ -29,7 +29,7 @@ Claude Code で大学のレポートなどを書くときに、**生成AIの利�
 Claude Code で次を実行します。
 
 ```
-/plugin marketplace add <OWNER>/<REPO>
+/plugin marketplace add attuan/report-mode
 /plugin install report-mode@claude-report-mode
 ```
 
@@ -101,7 +101,7 @@ Python 3 が必要です。追加のライブラリは不要です。
   ```
 
   `out`, `.git`, `.claude`, `node_modules` と、LaTeX の中間生成物や PDF は最初から除外されています。
-- **`export_preamble.txt`**: 付録ページの冒頭文です。置かなければ同梱のテンプレートが使われます。
+- **`export_preamble.txt`**: 付録ページの冒頭文です。置かなければ同梱のテンプレート（`plugins/report-mode/templates/export_preamble.txt`）が使われます。
 
 ## 注意点と制限
 
@@ -119,12 +119,12 @@ MIT
 
 ## English
 
-**claude-report-mode** is a Claude Code plugin that automatically logs how you used generative AI while writing an academic report, and exports the log as an appendix (LaTeX or Markdown).
+**report-mode** is a Claude Code plugin that automatically logs how you used generative AI while writing an academic report, and exports the log as an appendix (LaTeX or Markdown).
 
 When report mode is on, hooks record each **prompt**, **Claude's answer**, the **diffs Claude wrote** to your files, and the **edits you made yourself** afterwards. Each entry also has a free-text field for describing how you revised the answer.
 
 ```
-/plugin marketplace add <OWNER>/<REPO>
+/plugin marketplace add attuan/report-mode
 /plugin install report-mode@claude-report-mode
 
 /report-mode on [path] [--all]
